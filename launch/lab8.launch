@@ -1,0 +1,10 @@
+
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"	
+	      args="$(find lab8)/world/playground.world" />
+	<node name="a_path_planning" pkg="lab8" type="path.py" output="screen"/>	
+	
+	<param name="goalx" type="double" value="4.5" />
+        <param name="goaly" type="double" value="9.0" />
+         
+</launch>
